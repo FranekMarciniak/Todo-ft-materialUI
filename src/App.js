@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import TodoState from "./context/todoContext/todoState";
 import { Grid } from "@material-ui/core";
 import Header from "./Header";

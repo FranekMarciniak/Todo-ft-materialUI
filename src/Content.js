@@ -13,6 +13,7 @@ function Content() {
     } else {
       displayTodos();
     }
+    // eslint-disable-next-line
   }, []);
   return (
     <List>

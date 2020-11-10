@@ -5,7 +5,7 @@ import {
   CROSS_NOTE,
   DISPLAY_TODOS,
 } from "../types.js";
-
+// eslint-disable-next-line
 export default (state, action) => {
   switch (action.type) {
     case ADD_NOTE:
@@ -39,5 +39,7 @@ export default (state, action) => {
     case DISPLAY_TODOS:
       const todosFromLS = JSON.parse(localStorage.getItem("todos"));
       return [...todosFromLS];
+    default:
+      return state;
   }
 };
